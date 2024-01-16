@@ -1,0 +1,9 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`test 1 1`] = `"2"`;
+
+exports[`test 2 1`] = `"3"`;
+
+exports[`test 3 1`] = `"4"`;
+
+exports[`test 4 1`] = `"5"`;
