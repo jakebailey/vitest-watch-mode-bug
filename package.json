@@ -1,18 +1,18 @@
 {
-  "name": "vitest-bug",
-  "version": "1.0.0",
-  "private": true,
-  "description": "",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "test": "vitest"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "devDependencies": {
-    "@types/node": "^20.11.4",
-    "vitest": "^1.2.0"
-  }
+    "name": "vitest-bug",
+    "version": "1.0.0",
+    "private": true,
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "test": "vitest"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^20.11.4",
+        "vitest": "^1.2.0"
+    }
 }
