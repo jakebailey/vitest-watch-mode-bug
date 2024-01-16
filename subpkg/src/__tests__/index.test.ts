@@ -1,11 +1,23 @@
 import { test } from "vitest";
 import { execa } from "execa";
 
-const tests = [1, 2, 3, 4];
+
+function range(n: number) {
+  const x = [];
+  for (let i = 0; i < n; i++) {
+    x.push(i);
+  }
+  return x;
+}
+
+const tests = range(10);
+
 
 for (const t of tests) {
   test.concurrent(`test ${t}`, async ({expect}) => {
-    const { stdout } = await execa("sh", ["-c", `sleep 1; echo ${t+1}`]);
-    expect(stdout).toMatchSnapshot();
+    const result = await execa("sh", ["-c", `sleep 500ms; echo ${Math.random()}`]);
+    expect(result.stdout).toMatchSnapshot();
+    expect(result.stderr).toMatchSnapshot();
+    expect(result.exitCode).toMatchSnapshot();
   })
 }
